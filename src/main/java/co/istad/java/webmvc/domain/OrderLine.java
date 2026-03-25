@@ -7,8 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.math.BigDecimal;
-
 @Getter
 @Setter
 @NoArgsConstructor
@@ -29,5 +27,5 @@ public class OrderLine {
 
     private Integer qty;
     private BigDecimal unitPrice;
-    private float discount;
+    private Float discount;
 }

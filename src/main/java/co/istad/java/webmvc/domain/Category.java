@@ -26,24 +26,4 @@ public class Category {
 
     @OneToMany(mappedBy = "category")
     private List<Product> products;
-
-    public String getCode() {
-        return null;
-    }
-
-    public String getDescription() {
-        return null;
-    }
-
-    public BigDecimal getPrice() {
-        return null;
-    }
-
-    public String getPicture() {
-        return null;
-    }
-
-    public Boolean getIsAvailable() {
-        return null;
-    }
 }

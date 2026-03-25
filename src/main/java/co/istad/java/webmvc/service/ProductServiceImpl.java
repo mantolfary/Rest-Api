@@ -18,12 +18,10 @@ import org.springframework.web.server.ResponseStatusException;
 public class ProductServiceImpl  implements ProductService {
     private final CategoryRepository categoryRepository;
     private final ProductRepository productRepository;
-    private final ProductService productService;
 
-    public ProductServiceImpl(CategoryRepository categoryRepository, ProductRepository productRepository, ProductService productService) {
+    public ProductServiceImpl(CategoryRepository categoryRepository, ProductRepository productRepository) {
         this.categoryRepository = categoryRepository;
         this.productRepository = productRepository;
-        this.productService = productService;
     }
 
     @Override
